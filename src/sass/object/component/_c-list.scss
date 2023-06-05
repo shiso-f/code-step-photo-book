@@ -1,0 +1,10 @@
+@use "global" as *;
+
+.c-list__item {
+  font-size: rem(14);
+  margin-bottom: rem(20);
+}
+
+.c-list__item:last-child {
+  margin-bottom: 0;
+}

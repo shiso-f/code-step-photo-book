@@ -1,0 +1,12 @@
+@use "global" as *;
+
+.c-book-info {
+    border-top: 1px $grey solid;
+    border-bottom: 1px $grey solid;
+    padding: rem(16) 0;
+}
+
+.c-book-info__title {
+    float: left;
+    width: calc(65/375 * 100%);
+}

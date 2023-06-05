@@ -1,0 +1,6 @@
+@use "global" as *;
+
+.c-link {
+  font-size: rem(14);
+  border-bottom: 1px $black solid;
+}

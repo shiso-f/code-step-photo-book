@@ -4,9 +4,9 @@
     "description": "トップページディスクリプション",
     "url": "https://aaa.com"
   },
-  "tutorial": {
-    "title": "チュートリアルのページタイトル",
-    "description": "チュートリアルのコンテンツです！",
-    "url": "https://turorialtest.com"
+  "component": {
+    "title": "コンポーネントのページタイトル",
+    "description": "コンポーネントのコンテンツです！",
+    "url": "http://localhost:3000/component.html"
   }
 }

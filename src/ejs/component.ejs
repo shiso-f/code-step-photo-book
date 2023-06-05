@@ -1,4 +1,4 @@
-<% baseUrlPath='.' ; ejsPath='.' ; pageData="" %>
+<% baseUrlPath='.' ; ejsPath='.' ; pageData="component" %>
 <!DOCTYPE html>
 <html lang="ja">
   <style>
@@ -21,22 +21,34 @@
       color: white;
     }
   </style>
+  <%- include(ejsPath + '/common/_head' ,{ baseUrl: baseUrlPath, page:
+    json[pageData] }) %>
   <body>
     <div class="wrapper">
       <h2 class="h2">header</h2>
       <p class="p">ヘッダー</p>
       <%- include(ejsPath + '/common/_header' ) %>
 
+      <h2 class="h2">.c-mv</h2>
+      <%- include(ejsPath + '/component/_c-mv') %>
+
       <h2 class="h2">.c-title</h2>
       <p class="p">セクションタイトル</p>
-      <!-- prettier-ignore -->
-      <%- include(ejsPath + '/tutorial/component/_c-title' ,{color:'blue', title:'ここ変えてみる'}) %>
-      <!-- prettier-ignore -->
-      <%- include(ejsPath + '/tutorial/component/_c-title' ,{color:'pink', title:'カードブロック'}) %>
-      <!-- prettier-ignore -->
-      <%- include(ejsPath + '/tutorial/component/_c-title' ,{color:'black', title:'カードブロック'}) %>
-      <!-- prettier-ignore -->
-      <%- include(ejsPath + '/tutorial/component/_c-title' ,{color:'white', title:'カードブロック'}) %>
+      <%- include(ejsPath + '/component/_c-title' ,{title:'INDEX'}) %>
+      <%- include(ejsPath + '/component/_c-title' ,{title:'DETAIL'}) %>
+      <%- include(ejsPath + '/component/_c-title' ,{title:'タイトルタイトルタイトル'}) %>
+      
+      <h2 class="h2">.c-list</h2>
+      <%- include(ejsPath + '/component/_c-list') %>
+
+      <h2 class="h2">.c-book-info</h2>
+      <%- include(ejsPath + '/component/_c-book-info') %>
+
+      <h2 class="h2">.c-text</h2>
+      <%- include(ejsPath + '/component/_c-text' ,{text:'テキストテキストテキストテキストテキストテ キスト テキストテキストテキストテキストテ キストテキスト'}) %>
+
+      <h2 class="h2">.c-link</h2>
+      <%- include(ejsPath + '/component/_c-link' ,{link:'', text:'オンラインストアで見る'}) %>
 
       <h2 class="h2">.footer</h2>
       <p class="p">フッター</p>
