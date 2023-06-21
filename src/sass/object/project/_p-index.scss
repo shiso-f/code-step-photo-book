@@ -1,0 +1,17 @@
+@use "global" as *;
+
+.p-index {
+    background-color: $white;
+    padding: rem(30) rem(40);
+    width: 100vw;
+    margin-left: calc(50% - 50vw);
+    @include mq("md") {
+        width: 100%;
+        margin-left: 0;
+        padding: rem(30) rem(200);
+    }
+}
+
+.p-index__title {
+    margin-bottom: rem(17);
+}

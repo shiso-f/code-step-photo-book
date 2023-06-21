@@ -1,0 +1,26 @@
+@use "global" as *;
+
+.p-detail__title {
+    margin-bottom: rem(14);
+}
+
+.p-detail__content {
+    @include mq("md") {
+        display: flex;
+        justify-content: space-between;
+    }
+}
+
+.p-detail__img {
+    margin-bottom: rem(25);
+    @include mq("md") {
+        margin-bottom: 0;
+        width: calc(270/600 * 100%);
+    }
+}
+
+.p-detail__book-info {
+    @include mq("md") {
+        width: calc(270/600 * 100%);
+    }
+}
